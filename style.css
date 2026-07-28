@@ -8,10 +8,10 @@ body {
   font-family: 'Montserrat', sans-serif;
   padding: 80px;
 
-  font-family:"Montserrat",sans-serif;
   font-size: 13px;
   line-height: 18px;
-  color: #1f1e45;
+  background-image: url(images/dandelion-bg\ 1.jpg);
+  background-repeat: repeat;
 }
 
 
