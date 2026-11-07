@@ -1,168 +1,207 @@
-d<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 
-  <head>
+<head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Каталог товаров</title>
-      <link rel="preconnect" href="https://fonts.googleapis.com">
+         <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/clear-list.css">
+  <link rel="stylesheet" href="style/title.css">
+  <link rel="stylesheet" href="style/card.css">
+  <link rel="stylesheet" href="style/products.css">
+  <link rel="stylesheet" href="style/catalog.css">
+  <link rel="stylesheet" href="style/container.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   
-  <link rel="stylesheet" href="style.css">
   </head>
 
-   <body>
-    <div class="container>"
-<>
-      <h1 class="title">Выбери свой продукт</h1>
+<body>
+  <main class="catalog">
+  <div class="container catalog__container">
 
-      <ul class="products-list">
-       <li class="firstcard">   
+    <h1 class="title catalog__title">Выбери свой продукт</h1>
+
+    <ul class="products">
+       <li class="products__item card card--featured">  
+        <div class="card__image-wrapper">
         
-      <span class="badge">Бестселлер</span> 
+         <span class="card__badge">Бестселлер</span> 
         
-        <img src="images/photo 1.png" alt="Товар Увлажняющий мусс"/>
-           
-        <span class="skin-type">для нормальной кожи</span>
-           
-        <h2>Увлажняющий мусс</h2>
-      <div class="ratting">
-        <span>★</span>
-        <span>★</span>
-        <span>★</span>
-        <span>★</span>
-        <span>★</span>
-        <span class="rating-value">4.9</span>
-      </div>
-           <p>Глубоко увлажняет кожу лица оставляя ее мягкой и гладкой.</p>
-
-           <span>Состав:</span>
-
-           <ul>
-             <li>активные натуральные комплексы</li>
-             <li>витамины С, A, PP, B И D</li>
-            <li>солнцезащитные компоненты</li>
-           </ul>
-   <div class="price">
-          <b>Цена:</b>
-          <span>2750 руб.</span>
+         <img 
+         src="images/photo 1.png" 
+         alt="Товар Увлажняющий мусс"
+         class="card__image">
         </div>
-        <button class="buy-button">Купить</button>
+         <span class="card__category">для нормальной кожи</span>
+           
+         <h2 class="card__title">Увлажняющий мусс</h2>
+         <div class="card__rating">
+          <span class="card__star">★</span>
+          <span class="card__star">★</span>
+          <span class="card__star">★</span>
+          <span class="card__star">★</span>
+          <span class="card__star">★</span>
+          <span class="rating-value">4.9</span>
+        </div>
+       <p class="card__description">Глубоко увлажняет кожу лица оставляя ее мягкой и гладкой.</p>
+
+      <div class="card__compound compound">
+       <span class="compound__name">Состав:</span>
+
+       <ul class="compound__list">
+            <li class="compound__item">активные натуральные комплексы</li>
+            <li class="compound__item">витамины С, A, PP, B И D</li>
+            <li class="compound__item">солнцезащитные компоненты</li>
+       </ul>
+      </div>
+          <div class="card__price">
+            <span class="card__price-label">Цена:</span>
+            <span class="card__price-value">2750 руб.</span>
+          </div>
+        <button class="card__button"type="button">Купить</button>
         </li>
-        <li>
-          <img src="images/photo 2.png" alt="Товар Увлажняющая маска" />
-          <span class="skin-type">для нормальной кожи</span>
-          <h2>Увлажняющая маска</h2>
-          <div class="ratting">
-            <span>★</span>
-            <span>★</span>
-            <span>★</span>
-            <span>★</span>
-            <span>★</span>
-            <span class="rating-value">4.8</span>
+     <li class="products__item card">
+      <div class="card__image-wrapper"> 
+
+         <img 
+         src="images/photo 2.png" 
+         alt="Товар Увлажняющая маска"
+        class="card__image" >
+      </div>
+      
+         <span class="card__category">для нормальной кожи</span>
+         <h2 class="card__title">Увлажняющая маска</h2>
+         <div class="card_rating">
+            <span class="card__star">★</span>
+            <span class="card__star">★</span>
+            <span class="card__star">★</span>
+            <span class="card__star">★</span>
+            <span class="card__star">★</span>
+            <span class="card__rating-value">4.8</span>
             </div>
-          <p>Способствует удерживанию влаги в верхних слоях кожи.</p>
+        <p class="card__description">Способствует удерживанию влаги в верхних слоях кожи.</p>
+        <div class="card__compound compound">
+        <span class="compound__name">Состав:</span>
 
-          <span>Состав:</span>
-
-          <ul>
-            <li>воски</li>
-            <li>минералы</li>
-            <li>масла</li>
+        <ul class="compound__list">
+            <li class="compound__item">воски</li>
+            <li class="compound__item">минералы</li>
+            <li class="compound__item">масла</li>
           </ul>
-          <div class="price">
-            <b> Цена:</b>
-            <span>2 750₽</span>
+        </div>
+        <div class="card__price">
+            <span class="card__price-label"> Цена:</span>
+            <span class="card__price-value">2 750₽</span>
           </div>
-          <button class="buy-button">Купить</button>
+        <button class="card__button" type="button">Купить</button>
         </li>
-        <li>
-          <img src="images/photo 3.png" alt="товар Гуль для умывания"/>
-          <span class="skin-type">для нормальной кожи</span>
-          <h2>Гель для умывания</h2>
-          <div class="ratting">
-            <span>★</span>
-            <span>★</span>
-            <span>★</span>
-            <span>★</span>
-            <span>★</span>
-            <span class="rating-value">4.7</span>
+     <li class="products__item card">
+      <div class="card__image-wrapper">
+        <img 
+         src="images/photo 3.png"
+         alt="товар Гель для умывания" 
+         class="card__image"/>
+      </div>
+        <span class="card__category">для нормальной кожи</span>
+        <h2 class="card__title">Гель для умывания</h2>
+        <div class="card__rating">
+            <span class="card__star">★</span>
+            <span class="card__star">★</span>
+            <span class="card__star">★</span>
+            <span class="card__star">★</span>
+            <span class="card__star">★</span>
+            <span class="card__star card__star--half">★</span>
+            <span class="card__rating-value">4.5</span>
           </div>
-          <p>Интенсивно очищает, не повреждает барьер кожи.</p>
+      <p class="card__discription">Интенсивно очищает, не повреждает барьер кожи.</p>
+       <div class="card__compound compound">
+      <span class="compound__name">Состав:</span>
 
-          <span>Состав:</span>
-
-          <ul>
-            <li>минералы</li>
-            <li>Витамины C, А, PP, B и E</li>
-            <li>Солнцезащитные компоненты</li>
-          </ul>
-          <div class="price"> 
-            <b>Цена:</b>
-            <span>2 750₽</span>
-          </div>
-
-              <button class="buy-button">Купить</button>
-          </li>
-          <li>
-            <img src="images/photo 4.png" alt="Подарочный набор №1"/>
-            <span class="skin-type">для нормальной кожи</span>
-            <h2>Подарочный набор №1</h2>
-            <div class="zvezda">
-              <span>★</span>
-              <span>★</span>
-              <span>★</span>
-              <span>★</span>
-              <span>★</span>
-              <span class="rating-value">4.9</span>
+      <ul class="compound__list">
+            <li class="compound__item">минералы</li>
+            <li class="compound__item">витамины C, А, PP, B и E</li>
+            <li class="compound__item">солнцезащитные компоненты</li>
+         </ul>
+      </div>
+      <div class="card__price">
+        <span class="card__price-label">Цена:</span>
+        <span class="card__price-value">2 750₽</span>
+      </div>
+      <button class="card__button" type="button">Купить</button>
+      </li>
+    <li class="products__item card">
+      <div class="card__image-wrapper">
+        <img 
+         src="images/photo 4.png"
+         alt="Подарочный набор №1" 
+         class="card__image"/>
+      </div>
+      <span class="card__category">для нормальной кожи</span>
+      <h2 class="card__title">Подарочный набор №1</h2>
+      <div class="card__rating">
+           <span class="card__star">★</span>
+           <span class="card__star">★</span>
+           <span class="card__star">★</span>
+           <span class="card__star">★</span>
+           <span class="card__star">★</span>
+           <span class="card__star card__star--half">★</span>
+           <span class="card__rating-value">4.9</span>
             </div>
-            <p>Набор,состоящий из увлажняющего крема и маски</p>
+      <p class="card__discription">Набор,состоящий из увлажняющего крема и маски</p>
 
-            <span>Состав:</span>
-
-            <ul>
-              <li>воски</li>
-              <li>минералы</li>
-              <li>масла</li>
-            </ul>
-            <div class="price">
-              <b>Цена:</b>
-                <span>4 750₽</span>
-            </div>
-
-            <button class="buy-button">Купить</button>
-            </li>
-            <li>
-              <img src="images/photo 5.png" alt="Подарочный набор №5"/>
-              <span class="skin-type">для нормальной кожи</span>
-              <h2>Подарочный набор №5</h2>
-              <div class="zvezda">
-                <span>★</span>
-                <span>★</span>
-                <span>★</span>
-                <span>★</span>
-                <span class="rating-value">4.0</span>
+      <div class="card__compound compound">
+        <span class="compound__name">Состав:</span>
+        <ul class="compound__list">
+          <li class="compound__item">воски</li>
+          <li class="compound__item">минералы</li>
+          <li class="compound__item">масла</li>
+        </ul>
+      </div>
+      <div class="card__price">
+        <span class="card__price-label">Цена:</span>
+        <span class="card__price-value">4 750₽</span>
+      </div>
+      <button class="card__button" type="button">Купить</button>
+        </li>
+    <li class="products__item card">
+      <div class="card__image-wrapper">
+        <img 
+         src="images/photo 5.png"
+         alt="Подарочный набор №5" 
+         class="card__image"/>
+      </div>
+      <span class="card__category">для нормальной кожи</span>
+      <h2 class="card__title">Подарочный набор №5</h2>
+      <div class="card__rating">
+          <span class="card__star">★</span>
+          <span class="card__star">★</span>
+          <span class="card__star">★</span>
+          <span class="card__star">★</span>
+          <span class="card__star">★</span>
+          <span class="card__star card__star--half">★</span>
+          <span class="card__rating-value">4.0</span>
               </div>
-              <p>Весь набор средств Invisible symphony, крем, маска, мусс и гель для умывания.</p>
-
-              <span>Состав:</span>
-
-              <ul>
-                <li>воски</li>
-                <li>минералы</li>
-                <li>масла</li>
+        <p class="card__discription">Весь набор средств Invisible symphony, крем, маска, мусс и гель для умывания.</p>
+      <div class="card__compound compound">
+        <span class="compound__name">Состав:</span>
+        <ul class="compound__list">
+         <li class="compound__item">воски</li>
+         <li class="compound__item">минералы</li>
+         <li class="compound__item">масла</li>
               </ul>
-              <div class="price">
-                <b>Цена:</b>
-                <span>7 520₽</span>
-                </div>
-
-                <button class="buy-button">Купить</button>
+      <div class="card__price">
+        <span class="card__price-label">Цена:</span>
+        <span class="card__price-value">7 520₽</span>
+       </div>
+      <button class="card__button" type="button">Купить</button>
             </li>
-            </ul>
-   </body>
-
+           </ul>
+         </div>
+       </main>
+     </body>
    </html>
             
 
